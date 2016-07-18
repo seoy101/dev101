@@ -1,0 +1,15 @@
+@* inputPage Template File *@
+@import model._
+@(inputForm:Form[Input])(implicit messages:Messages)
+@import helper._
+@main(Messages("input")){
+   			@helper.form(action=routes.PageController.input()){
+			<fieldSet>
+				@helper.inputText(inputForm("input1"))
+				@helper.inputText(inputForm("input2"))
+				@helper.inputText(inputForm("input3"))
+			</fieldSet>	
+			<button type="submit" >@Messages("input")</button>
+		}
+   			
+}

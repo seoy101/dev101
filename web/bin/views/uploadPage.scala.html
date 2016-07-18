@@ -1,0 +1,12 @@
+@* uploadPage Template File *@
+@(param: Any)(implicit messages:Messages)
+@import helper._
+@main(Messages("fileUpload"){
+	   		<input type="file" name="file">
+   	
+	@helper.form(action = routes.Upload.uploadFile, 'enctype -> "multipart/form-data"){    
+    <p>
+        <input type="submit" value="upload">
+    </p>
+    }
+}

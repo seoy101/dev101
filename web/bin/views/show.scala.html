@@ -1,0 +1,15 @@
+@* show Template File *@
+
+@import model._
+@(value: Input)(implicit messages :Messages)
+@main(Messages("show")){
+	@value.input1
+	<br>
+	@value.input2
+	<br>
+	@value.input3
+	<br>
+	<a href="@controllers.routes.PageController.shell(value.input1)">execute shell</a>  
+	
+}
+

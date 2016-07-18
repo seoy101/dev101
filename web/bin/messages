@@ -1,0 +1,4 @@
+application.name=aaaaaaaa
+input=Input
+execute.shell = shell
+fileUpload = Upload
