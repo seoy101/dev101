@@ -3,8 +3,9 @@
 @import helper._
 @main(Messages("fileUpload")){
 	
-	   		<input type="file" name="file">
-   	@helper.form(action = routes.UploadController.uploadFile, 'enctype -> "multipart/form-data"){    
+	   		
+   	@helper.form(action = routes.UploadController.uploadCustom, 'enctype -> "multipart/form-data"){   
+   		<input type="file" name="file"> 
         <input type="submit" value="upload">
     }
 }
