@@ -1,0 +1,5 @@
+FROM ubuntu:latest
+ADD innerSh.sh /tmp
+ADD MT.fa /tmp
+WORKDIR /tmp
+CMD ./innerSh.sh
